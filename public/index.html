@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meldra Warpcast MiniApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">🎮 Meldra</h1>
+                <div id="wallet-section" class="wallet-section">
+                    <button id="connect-wallet" class="btn btn-primary">Connect Wallet</button>
+                    <div id="wallet-info" class="wallet-info hidden">
+                        <span id="wallet-address"></span>
+                        <span id="meldra-coins" class="coins-badge"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <!-- Landing Section -->
+                <section id="landing" class="landing-section">
+                    <div class="hero">
+                        <h2>Welcome to Meldra</h2>
+                        <p>NFT Marketplace + Quiz Battles + Rewards</p>
+                        <div class="cta-buttons">
+                            <button id="nft-marketplace-btn" class="btn btn-large btn-primary">
+                                🎨 NFT Marketplace
+                            </button>
+                            <button id="quiz-battle-btn" class="btn btn-large btn-secondary">
+                                🧠 Quiz Battle
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dynamic Content Sections -->
+                <section id="nft-section" class="content-section hidden">
+                    <div class="section-header">
+                        <button id="back-to-main" class="btn btn-back">← Back</button>
+                        <h2>NFT Marketplace</h2>
+                    </div>
+                    <div id="nft-content"></div>
+                </section>
+
+                <section id="quiz-section" class="content-section hidden">
+                    <div class="section-header">
+                        <button id="back-to-main-from-quiz" class="btn btn-back">← Back</button>
+                        <h2>Quiz Battle</h2>
+                    </div>
+                    <div id="quiz-content"></div>
+                </section>
+
+                <!-- Admin Panel (Dynamically Loaded) -->
+                <section id="admin-section" class="content-section hidden">
+                    <div class="section-header">
+                        <button id="back-to-main-from-admin" class="btn btn-back">← Back</button>
+                        <h2>Admin Panel</h2>
+                    </div>
+                    <div id="admin-content"></div>
+                </section>
+
+                <!-- Admin Access Button (Hidden by default) -->
+                <div id="admin-access" class="admin-access hidden">
+                    <button id="admin-panel-btn" class="btn btn-admin">⚙️ Admin Panel</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Notification System -->
+        <div id="notification" class="notification hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
