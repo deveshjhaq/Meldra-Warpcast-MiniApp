@@ -1,0 +1,14 @@
+{
+  "name": "Meldra Warpcast MiniApp",
+  "description": "NFT Marketplace + Quiz Battle + Reward System on Base",
+  "icon": "icon-192.png",
+  "splash": {
+    "image": "icon-512.png",
+    "backgroundColor": "#4A90E2"
+  },
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#4A90E2",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}
